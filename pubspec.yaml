@@ -1,0 +1,33 @@
+name: kids_todo_app # プロジェクトの名前
+description: A simple TODO app for kids to help them organize tasks. # アプリの説明
+publish_to: 'none' # パッケージを公開しない場合に使用。公開する予定がなければ残すと良い。
+
+version: 1.0.0+1 # プロジェクトのバージョン番号
+# versionの形式は "MAJOR.MINOR.PATCH+BUILD" です。
+# 例：1.0.0+1 はバージョン 1.0.0 のビルド番号 1 という意味です。
+
+environment:
+  sdk: '>=3.5.0 <4.0.0' # Dart SDKのバージョンの制約。Dart 3.5.0以上が推奨される。
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 状態管理用のproviderパッケージ
+  provider: ^6.0.0
+
+  # データの永続化用
+  shared_preferences: ^2.0.13
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    # テスト用のフレームワーク。ユニットテストやウィジェットテストに使用します。
+  
+  flutter_lints: ^2.0.0
+  # Flutterのコード規約に基づいた静的解析ツール。コードの品質を保つのに有用です。
+  # Flutter Lintsはプロジェクトのコードを読みやすく保ち、潜在的なバグを防ぐのに役立ちます。
+
+flutter:
+  uses-material-design: true
+  # Materialデザインを使うことで、より一貫性のあるUIを簡単に構築することができます。
